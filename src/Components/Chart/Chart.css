@@ -1,0 +1,9 @@
+.Chart {
+  margin-top: 20px;
+}
+.Chart .ChartTitle{
+    padding-bottom: 20px;
+    margin-left: 51px;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+}

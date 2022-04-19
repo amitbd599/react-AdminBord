@@ -40,7 +40,6 @@ export default function FeatureInfo() {
         </div>
       </div>
 
-      {/* Other option */}
     </div>
   );
 }

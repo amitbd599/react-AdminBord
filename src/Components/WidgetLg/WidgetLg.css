@@ -1,0 +1,56 @@
+.WidgetLg {
+  flex: 3;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 1px 13px 0 rgb(0 0 0 / 13%);
+}
+.WidgetLg .WidgetLgWrapTitle{
+  font-size: 22px;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+.WidgetLg .WidgetLgWrapData table{
+border-spacing: 20px;
+width: 100%;
+}
+.WidgetLg .WidgetLgWrapData .WidgetLgWrapTh{
+text-align: start;
+}
+.WidgetLg .WidgetLgWrapTr .WidgetLgWrapUser{
+
+display: flex;
+align-items: center;
+}
+.WidgetLg .WidgetLgWrapTr{
+font-size: 14px;
+color: var(--primary-text-color);
+}
+.WidgetLg .WidgetLgWrapImg{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin-right: 10px;
+
+}
+.WidgetLg .WidgetLgWrapStatus .Approved,
+.WidgetLg .WidgetLgWrapStatus .Pending,
+.WidgetLg .WidgetLgWrapStatus .Declined{
+  padding: 7px 0px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: block;
+
+}
+.WidgetLg .WidgetLgWrapStatus .Declined{
+ background: rgba(255, 90, 90, 0.205);
+color: rgb(255, 0, 0);
+}
+.WidgetLg .WidgetLgWrapStatus .Pending{
+ background: #48bfee34;
+color: #00b7ff;
+}
+.WidgetLg .WidgetLgWrapStatus .Approved{
+ background: #2ddba14d;
+color: var(--primary-theme-color);
+}

@@ -6,3 +6,7 @@ width:calc( 100% - 200px);
  background-color: #F9FAFB;
 
 }
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+}

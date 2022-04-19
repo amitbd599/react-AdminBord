@@ -1,11 +1,10 @@
 :root {
-  --primary-theme-color: #0E9F6E;
-  --primary-hover-color: #0E9F6E;
+  --primary-theme-color: #0e9f6e;
+  --primary-hover-color: #0e9f6e;
   --primary-bg-color: #fff;
-  --secondary-bg-color: #F9FAFB;
+  --secondary-bg-color: #f9fafb;
   --primary-text-color: #757575;
   --secondary-text-color: #121212;
-
 }
 
 * {
@@ -19,7 +18,4 @@ html {
 
 .containerMain {
   display: flex;
-}
-.other {
-  flex: 4;
 }

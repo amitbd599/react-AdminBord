@@ -1,0 +1,55 @@
+.WidgetSm {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 1px 13px 0 rgb(0 0 0 / 13%);
+}
+.WidgetSm .member {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin-bottom: 5px;
+}
+.WidgetSm .title {
+  font-size: 22px;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+.WidgetSm img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* padding: 5px ; */
+}
+.WidgetSm .name,
+.WidgetSm .position {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+.WidgetSm .position {
+  font-weight: normal;
+}
+.WidgetSm .buttonHold {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border: 1px solid var(--primary-theme-color);
+  color: #fff;
+  border-radius: 10px;
+  background: var(--primary-theme-color);
+  transition: all 0.2s linear;
+}
+.WidgetSm .icon{
+    padding-right: 5px;
+}
+.WidgetSm .buttonHold:hover {
+  color: var(--primary-theme-color);
+  background: var(--primary-bg-color);
+}
