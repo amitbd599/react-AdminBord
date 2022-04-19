@@ -1,88 +1,46 @@
 import React from "react";
 import "./FeatureInfo.css";
-import HourglassBottomIcon from "@mui/icons-material/HourglassBottom";
-import ContentPasteIcon from "@mui/icons-material/ContentPaste";
-import StreetviewIcon from "@mui/icons-material/Streetview";
+import {
+  MdOutlineContentCopy,
+  MdOutlineProductionQuantityLimits,
+  MdFreeCancellation,
+} from "react-icons/md";
+import { BiDollar } from "react-icons/bi";
 export default function FeatureInfo() {
   return (
-    <div className="FeatureInfo">
-      <div className="FeatureInfoItem">
-        <h2 className="FeatureInfoTitle">Total Post :</h2>
-        <div className="FeatureInfoContainer">
-          <p className="FeatureInfoTotalPost">
-            {" "}
-            <HourglassBottomIcon className="FeatureInfoIcon" />
-            Total post are include : 16
-          </p>
-          <p className="FeatureInfoTotalVisit">
-            {" "}
-            <StreetviewIcon className="FeatureInfoIcon" />
-            Total post view : 16163
-          </p>
-          <p className="FeatureInfoTotalVisit_LastPost">
-            {" "}
-            <ContentPasteIcon className="FeatureInfoIcon" />
-            Last Post :
-          </p>
-          <p className="FeatureInfoTotalLastPosted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            fugit illo placeat incidunt perferendis pariatur vel molestiae
-            laudantium exercitationem quas!
-          </p>
+    <div className="FeatureInfoMain">
+      <div className="FeatureInfo">
+        <div className="FeatureInfoItem">
+          <span>
+            <MdOutlineContentCopy className="FeatureInfoItem_icon" />
+          </span>
+          <h3 className="FeatureInfoItem_title">Today Earn</h3>
+          <h2 className="FeatureInfoItem_price">$ 360</h2>
+        </div>
+        <div className="FeatureInfoItem">
+          <span>
+            <BiDollar className="FeatureInfoItem_icon" />
+          </span>
+          <h3 className="FeatureInfoItem_title">Total Earn</h3>
+          <h2>$ 25,660</h2>
+        </div>
+        <div className="FeatureInfoItem">
+          <span>
+            <MdOutlineProductionQuantityLimits className="FeatureInfoItem_icon" />
+          </span>
+          <h3 className="FeatureInfoItem_title">Total Order</h3>
+          <h2>360</h2>
+        </div>
+        <div className="FeatureInfoItem">
+          <span>
+            <MdFreeCancellation className="FeatureInfoItem_icon" />
+          </span>
+          <h3 className="FeatureInfoItem_title">Order Cancel</h3>
+          <h2>29</h2>
         </div>
       </div>
-      <div className="FeatureInfoItem">
-        <h2 className="FeatureInfoTitle">Total Comment :</h2>
-        <div className="FeatureInfoContainer">
-          <p className="FeatureInfoTotalPost">
-            {" "}
-            <HourglassBottomIcon className="FeatureInfoIcon" />
-            Total Comment are include : 639
-          </p>
-          <p className="FeatureInfoTotalVisit">
-            {" "}
-            <StreetviewIcon className="FeatureInfoIcon" />
-            Total Comment reply : 163
-          </p>
-          <p className="FeatureInfoTotalVisit_LastPost">
-            {" "}
-            <ContentPasteIcon className="FeatureInfoIcon" />
-            Last Comment :
-          </p>
-          <p className="FeatureInfoTotalLastPosted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            fugit illo placeat incidunt perferendis pariatur vel molestiae
-            laudantium exercitationem quas!
-          </p>
-        </div>
-      </div>
-      <div className="FeatureInfoItem">
-        <h2 className="FeatureInfoTitle">Total Comment :</h2>
-        <div className="FeatureInfoContainer">
-          <p className="FeatureInfoTotalPost">
-            {" "}
-            <HourglassBottomIcon className="FeatureInfoIcon" />
-            Total Comment are include : 639
-          </p>
-          <p className="FeatureInfoTotalVisit">
-            {" "}
-            <StreetviewIcon className="FeatureInfoIcon" />
-            Total Comment reply : 163
-          </p>
-          <p className="FeatureInfoTotalVisit_LastPost">
-            {" "}
-            <ContentPasteIcon className="FeatureInfoIcon" />
-            Last Comment :
-          </p>
-          <p className="FeatureInfoTotalLastPosted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            fugit illo placeat incidunt perferendis pariatur vel molestiae
-            laudantium exercitationem quas!
-          </p>
-        </div>
-      </div>
-    </div>
 
-    
+      {/* Other option */}
+    </div>
   );
 }

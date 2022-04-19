@@ -8,14 +8,14 @@ const TopBar = () => {
     <div className="TopBar">
       <div className="topBarWrap">
         <div className="leftTopBar">
-          <span className="logo">Logo</span>
+          <span className="logo">Logo</span>  
         </div>
         <div className="rightTopBar">
           <div className="topBarIcon">
             <NotificationsIcon />
             <span className="topIconBag">2</span>
           </div>
-          <div className="topBarIcon">
+          <div className="topBarIcon"> 
             <LanguageIcon />
             <span className="topIconBag">2</span>
           </div>

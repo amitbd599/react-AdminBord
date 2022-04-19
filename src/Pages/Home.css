@@ -2,7 +2,7 @@
 
 
 .Home{
- flex: 4;   
+width:calc( 100% - 200px);
  background-color: #F9FAFB;
 
 }

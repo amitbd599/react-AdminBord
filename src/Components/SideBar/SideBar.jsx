@@ -1,8 +1,10 @@
 import React from "react";
 import "./SideBar.css";
-import LineStyleIcon from "@mui/icons-material/LineStyle";
-import EqualizerIcon from '@mui/icons-material/Equalizer';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import { AiFillHome,AiFillSetting,AiOutlineArrowRight } from "react-icons/ai";
+import { BsFileEarmarkPost } from "react-icons/bs";
+import { BiCategory } from "react-icons/bi";
+import { MdPermMedia, MdRestorePage,MdAddComment,MdNotificationsActive,MdSms } from "react-icons/md";
+import { FaUserAlt,FaTools } from "react-icons/fa";
 const SideBar = () => {
   return (
     <div className="SideBar">
@@ -11,74 +13,73 @@ const SideBar = () => {
           <h3 className="sideBarTitle">Dashboard</h3>
           <ul className="sideBarList">
             <li className="sideBarListItem active">
-                <LineStyleIcon className="sideBarIcon"/>
+                <AiFillHome className="sideBarIcon"/>
               Home
             </li>
             <li className="sideBarListItem"Item>
-                <EqualizerIcon className="sideBarIcon"/>
-              Analytics
+                <BsFileEarmarkPost className="sideBarIcon"/>
+              Post +
+
+              {/* DropDown List */}
+
+              <ul className="dropDownItems">
+                <li className="dropDownItem">All Post</li>
+                <li className="dropDownItem">Add New</li>
+                <li className="dropDownItem">Tag</li>
+                <li className="dropDownItem">Category</li>
+              </ul>
             </li>
             <li className="sideBarListItem"Item>
-                <TrendingUpIcon className="sideBarIcon"/>
-              Sales
+                <MdPermMedia className="sideBarIcon"/>
+              Media
             </li>
+            <li className="sideBarListItem"Item>
+                <BiCategory className="sideBarIcon"/>
+              Category   +
+              {/* DropDown List */}
+
+              <ul className="dropDownItems">
+                <li className="dropDownItem">All Category</li>
+                <li className="dropDownItem">Add New Category</li>
+                <li className="dropDownItem">Tag</li>
+                <li className="dropDownItem">Category List</li>
+              </ul>
+            </li>
+            <li className="sideBarListItem"Item>
+                <MdRestorePage className="sideBarIcon"/>
+              Pages
+            </li>
+            <li className="sideBarListItem"Item>
+                <MdNotificationsActive className="sideBarIcon"/>
+              Notification
+            </li>
+            <li className="sideBarListItem"Item>
+                <MdSms className="sideBarIcon"/>
+              Inbox
+            </li>
+            <li className="sideBarListItem"Item>
+                <FaTools className="sideBarIcon"/>
+              Tools
+            </li>
+            <li className="sideBarListItem"Item>
+                <MdAddComment className="sideBarIcon"/>
+              Comments
+            </li>
+            <li className="sideBarListItem"Item>
+                <FaUserAlt className="sideBarIcon"/>
+              Users
+            </li>
+            <li className="sideBarListItem"Item>
+                <AiFillSetting className="sideBarIcon"/>
+              Setting
+              
+            </li>
+            
+           
             
           </ul>
         </div>
-        <div className="sideBarMenu">
-          <h3 className="sideBarTitle">Quick Menu</h3>
-          <ul className="sideBarList">
-            <li className="sideBarListItem active">
-                <LineStyleIcon className="sideBarIcon"/>
-              Product
-            </li>
-            <li className="sideBarListItem"Item>
-                <EqualizerIcon className="sideBarIcon"/>
-              Transaction
-            </li>
-            <li className="sideBarListItem"Item>
-                <TrendingUpIcon className="sideBarIcon"/>
-              Report
-            </li>
-            
-          </ul>
-        </div>
-        <div className="sideBarMenu">
-          <h3 className="sideBarTitle">Notification</h3>
-          <ul className="sideBarList">
-            <li className="sideBarListItem active">
-                <LineStyleIcon className="sideBarIcon"/>
-              Mail
-            </li>
-            <li className="sideBarListItem"Item>
-                <EqualizerIcon className="sideBarIcon"/>
-              Feedback
-            </li>
-            <li className="sideBarListItem"Item>
-                <TrendingUpIcon className="sideBarIcon"/>
-              Message
-            </li>
-            
-          </ul>
-        </div>
-        <div className="sideBarMenu">
-          <h3 className="sideBarTitle">Staff</h3>
-          <ul className="sideBarList">
-            <li className="sideBarListItem active">
-                <LineStyleIcon className="sideBarIcon"/>
-              manager
-            </li>
-            <li className="sideBarListItem"Item>
-                <EqualizerIcon className="sideBarIcon"/>
-              Analytics
-            </li>
-            <li className="sideBarListItem"Item>
-                <TrendingUpIcon className="sideBarIcon"/>
-              Reports
-            </li>
-            
-          </ul>
-        </div>
+        
       </div>
     </div>
   );
