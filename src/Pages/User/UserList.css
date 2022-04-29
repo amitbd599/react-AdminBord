@@ -1,0 +1,8 @@
+.UserList{
+    flex: 4;
+}
+.UserList .userImg{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

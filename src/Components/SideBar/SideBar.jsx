@@ -5,6 +5,8 @@ import { BsFileEarmarkPost } from "react-icons/bs";
 import { BiCategory } from "react-icons/bi";
 import { MdPermMedia, MdRestorePage,MdAddComment,MdNotificationsActive,MdSms } from "react-icons/md";
 import { FaUserAlt,FaTools } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div className="SideBar">
@@ -14,7 +16,8 @@ const SideBar = () => {
           <ul className="sideBarList">
             <li className="sideBarListItem active">
                 <AiFillHome className="sideBarIcon"/>
-              Home
+                <Link to={'/'}>Home</Link>
+             
             </li>
             <li className="sideBarListItem"Item>
                 <BsFileEarmarkPost className="sideBarIcon"/>
@@ -65,9 +68,9 @@ const SideBar = () => {
                 <MdAddComment className="sideBarIcon"/>
               Comments
             </li>
-            <li className="sideBarListItem"Item>
+            <li className="sideBarListItem" Item>
                 <FaUserAlt className="sideBarIcon"/>
-              Users
+             <Link to={"/users"}> Users</Link>
             </li>
             <li className="sideBarListItem"Item>
                 <AiFillSetting className="sideBarIcon"/>
